@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function about (){
+function about() {
     return (
         <section>
-            <div className='' id = "about-div">
+            <div className='' id="about-div">
+                <h2>
+                    About Me
+                </h2>
+                <P>
+                    
+                </P>
 
-</div>
+            </div>
         </section>
-        
+
     )
 
 }
