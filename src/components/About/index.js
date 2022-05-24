@@ -1,9 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import image from '../../media/image.jpg'
-import reportWebVitals from './reportWebVitals';
 import { Col } from 'react-bootstrap'
 
 function About() {
