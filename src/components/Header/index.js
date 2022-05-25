@@ -1,38 +1,43 @@
-import React from "react";
-import About from "../About";
-import Contact from "../Contact";
-import Footer from "../Footer";
-import Navigation from "../Navigation";
-import Project from "../Project";
-import Resume from "../Resume";
+import React, { useState } from 'react';
+import Navigation from '../Navigation';
+import About from '../About';
+import Project from '../Project';
+import Contact from '../Contact';
+import Resume from '../Resume';
 
-function Header () {
+function Header() {
+    // state of current page 
+    const [currentPage, handlePageChange] = useState('About');
 
-    return (
-        <nav className="navigation">
-      <a href="/" className="brand-name">
-        Mohamed Afifi
-      </a>
-      
-      <div
-        className="navigation-div">
-        <ul>
-          <li>
-            <a href="/home">About</a>
-          </li>
-          <li>
-            <a href="/about">Contact</a>
-          </li>
-          <li>
-            <a href="/contact">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Resume</a>
-          </li>
+    const renderPage = () => {
 
-        </ul>
+        // switch case for returning the right page 
+
+        switch(currentPage) {
+          case "about": 
+          return <About></About>
+          case "contact": 
+          return <Contact></Contact>
+          case "portfolio":
+          return  <Project></Project>
+          case "resume": 
+          return <Resume></Resume>
+          default:
+            return <About></About>
+        }
+       
+    };
+
+return (
+    <div>
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+    <div>
+        {
+          renderPage()
+        }
       </div>
-    </nav>
-    )
+    </div>
+  );
 }
-export default Header
+
+export default Header;

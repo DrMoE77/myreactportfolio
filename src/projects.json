@@ -1,0 +1,10 @@
+[
+    {
+        "id" : 1, 
+        "project_name": "Ecommerce app",
+        "project_img" : "",
+        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
+        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+    }
+]

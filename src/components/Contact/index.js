@@ -1,13 +1,12 @@
 import React from 'react';
 import { Col } from 'react-bootstrap'
+import { Form} from "react-bootstrap";
 
 function Contact() {
     return (
         <section>
             <div className='' id="contact-div">
                 <Col>
-
-
                     <h2>
                         Contact
                     </h2>
@@ -26,6 +25,9 @@ function Contact() {
                             <Form.Label>Message</Form.Label>
                             <Form.Control as="textarea" rows={5} />
                         </Form.Group>
+                        <button>
+                            Submit
+                        </button>
                     </Form>
                 </Col>
             </div>
