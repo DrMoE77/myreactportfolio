@@ -6,7 +6,7 @@
         "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
         "git_link" : "https://github.com/DrMoE77/E-Commerce",
         "deployed_link" : "https://youtu.be/vMVRntiLcYk"
-    }
+    },
     {
         "id" : 2, 
         "project_name": "Social Network Api",
@@ -14,7 +14,7 @@
         "project_desc": "A social network api project that allows you to add users to the database add friends reactions and thoughts and you can also create a friends list and freinds can share their thoughts and their reactions.",
         "git_link" : "https://github.com/DrMoE77/Social-Network-API",
         "deployed_link" : "https://www.loom.com/share/eed2174635664f1198c6a03212059184"
-    }
+    },
     {
         "id" : 3, 
         "project_name": "ReadMe Generator",
@@ -22,7 +22,7 @@
         "project_desc": "This is a command line application that generates a README file for any project/application.",
         "git_link" : "https://github.com/DrMoE77/ReadMe-Generator",
         "deployed_link" : "https://youtu.be/uizjsgG8BcU"
-    }
+    },
     {
         "id" : 4, 
         "project_name": "Recipe Finder App",
@@ -30,7 +30,7 @@
         "project_desc": " This is a receipe finding app that adapts to personal prefrences.",
         "git_link" : "https://github.com/DrMoE77/Recipe-APP",
         "deployed_link" : "https://carolinatnp.github.io/recipe-app/"
-    }
+    },
     {
         "id" : 5, 
         "project_name": "Team Profile Generator",
@@ -38,7 +38,7 @@
         "project_desc": "Generate a Team Profile. Where you can generate an Manager profle, an Engineer Profile and an Intern Profile.",
         "git_link" : "https://github.com/DrMoE77/Team-Profile-Generator",
         "deployed_link" : "/"
-    }
+    },
     {
         "id" : 6, 
         "project_name": "Note Taker App",
