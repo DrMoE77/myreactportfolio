@@ -21,15 +21,15 @@
         "project_img" : "./media",
         "project_desc": "This is a command line application that generates a README file for any project/application.",
         "git_link" : "https://github.com/DrMoE77/ReadMe-Generator",
-        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+        "deployed_link" : ""
     }
     {
-        "id" : 1, 
-        "project_name": "Ecommerce app",
+        "id" : 4, 
+        "project_name": "Recipe Finder App",
         "project_img" : "./media",
-        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
-        "git_link" : "https://github.com/DrMoE77/E-Commerce",
-        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+        "project_desc": " This is a receipe finding app that adapts to personal prefrences.",
+        "git_link" : "https://github.com/DrMoE77/Recipe-APP",
+        "deployed_link" : "https://carolinatnp.github.io/recipe-app/"
     }
     {
         "id" : 1, 
