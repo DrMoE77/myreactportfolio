@@ -2,7 +2,39 @@
     {
         "id" : 1, 
         "project_name": "Ecommerce app",
-        "project_img" : "",
+        "project_img" : "./media",
+        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
+        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "deployed_link" : ""
+    }
+    {
+        "id" : 2, 
+        "project_name": "Social Network Api",
+        "project_img" : "./media",
+        "project_desc": "A social network api project that allows you to add users to the database add friends reactions and thoughts and you can also create a friends list and freinds can share their thoughts and their reactions.",
+        "git_link" : "https://github.com/DrMoE77/Social-Network-API",
+        "deployed_link" : ""
+    }
+    {
+        "id" : 1, 
+        "project_name": "Ecommerce app",
+        "project_img" : "./media",
+        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
+        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+    }
+    {
+        "id" : 1, 
+        "project_name": "Ecommerce app",
+        "project_img" : "./media",
+        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
+        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+    }
+    {
+        "id" : 1, 
+        "project_name": "Ecommerce app",
+        "project_img" : "./media",
         "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
         "git_link" : "https://github.com/DrMoE77/E-Commerce",
         "deployed_link" : "https://youtu.be/vMVRntiLcYk"
