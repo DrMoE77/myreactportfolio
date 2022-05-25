@@ -32,11 +32,11 @@
         "deployed_link" : "https://carolinatnp.github.io/recipe-app/"
     }
     {
-        "id" : 1, 
-        "project_name": "Ecommerce app",
+        "id" : 5, 
+        "project_name": "Team Profile Generator",
         "project_img" : "./media",
-        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
-        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "project_desc": "Generate a Team Profile. Where you can generate an Manager profle, an Engineer Profile and an Intern Profile.",
+        "git_link" : "https://github.com/DrMoE77/Team-Profile-Generator",
         "deployed_link" : "https://youtu.be/vMVRntiLcYk"
     }
 ]
