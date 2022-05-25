@@ -16,11 +16,11 @@
         "deployed_link" : ""
     }
     {
-        "id" : 1, 
-        "project_name": "Ecommerce app",
+        "id" : 3, 
+        "project_name": "ReadMe Generator",
         "project_img" : "./media",
-        "project_desc": "This project builds a backend for an ecommerce application. It is connected through the MySql database and contains different products by categories, etc.",
-        "git_link" : "https://github.com/DrMoE77/E-Commerce",
+        "project_desc": "This is a command line application that generates a README file for any project/application.",
+        "git_link" : "https://github.com/DrMoE77/ReadMe-Generator",
         "deployed_link" : "https://youtu.be/vMVRntiLcYk"
     }
     {
