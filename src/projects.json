@@ -37,6 +37,14 @@
         "project_img" : "./media",
         "project_desc": "Generate a Team Profile. Where you can generate an Manager profle, an Engineer Profile and an Intern Profile.",
         "git_link" : "https://github.com/DrMoE77/Team-Profile-Generator",
-        "deployed_link" : "https://youtu.be/vMVRntiLcYk"
+        "deployed_link" : "/"
+    }
+    {
+        "id" : 6, 
+        "project_name": "Note Taker App",
+        "project_img" : "./media",
+        "project_desc": "This web application helps you to take notes and save them, as well as view the previously saved notes",
+        "git_link" : "https://github.com/DrMoE77/Note-Taker",
+        "deployed_link" : "https://moe77-note-taker.herokuapp.com/"
     }
 ]
