@@ -1,39 +1,44 @@
 import React from 'react';
-import { Col } from 'react-bootstrap'
-import { Form} from "react-bootstrap";
-
-function Contact() {
-    return (
-        <section>
-            <div className='body-div' id="contact-div">
-                <Col>
-                    <h2>
-                        Contact
-                    </h2>
-
-                    <Form>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label className='labels'>Name</Form.Label>
-                            <Form.Control className='inputs' type="name" placeholder="your name" />
-                        </Form.Group>
- 
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label className='labels'>Email address</Form.Label>
-                            <Form.Control className='inputs' type="email" placeholder="name@example.com" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label className='labels'>Message</Form.Label>
-                            <Form.Control className='inputs' as="textarea" rows={5} />
-                        </Form.Group>
-                        <button>
-                            Submit
-                        </button>
-                    </Form>
-                </Col>
-            </div>
-        </section>
-
-    )
-
+import { useForm, ValidationError } from '@formspree/react';
+function ContactForm() {
+  const [state, handleSubmit] = useForm("meqnngvj");
+  if (state.succeeded) {
+      return <p>Thanks for getting in touch!</p>;
+  }
+  return (
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
 }
-export default Contact
+function App() {
+  return (
+    <ContactForm />
+  );
+}
+export default App;
+
