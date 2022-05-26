@@ -3,7 +3,6 @@ import projects from '../../projects.json'
 
 function ProjectCard (props){
     return (
-        <div className="body-div">
         <div className="card"> 
           <div className="img-container">
             <img alt={props.project_name} src={props.project_img}/>
@@ -18,14 +17,13 @@ function ProjectCard (props){
               </li>
               <li>
                 <div className="project-media">
-                <a alt="github link" href={props.git_link}>Github link</a> 
-                <a alt ="deployed link" href={props.deployed_link}>Project Demo</a> 
+                <a alt="github link" target='_blank' href={props.git_link}>Github link</a> 
+                <a alt ="deployed link" target='_blank' href={props.deployed_link}>Project Demo</a> 
                 </div>
               </li>
               
             </ul>
           </div>
-        </div>
         </div>
       );
 }
@@ -37,19 +35,19 @@ function Wrapper(props) {
 function Project() {  
     return (
     <>
-    <div className="project">
-    <h1 className="title">My projects</h1>
+    <div className="body-div">
+    <h2 className="title">My projects</h2>
     </div>
 
       <Wrapper>
         {projects.map((project) => (
           <ProjectCard 
-          name={project.project_name}
+          project_name={project.project_name}
           key={project.id}
-          image={project.project_img}
-          github={project.git_link}
-          deployedlink={project.deployed_link}
-          description={project.project_desc}
+          project_img={project.project_img}
+          git_link={project.git_link}
+          deployed_link={project.deployed_link}
+          project_desc={project.project_desc}
           />
         ))}     
       </Wrapper>

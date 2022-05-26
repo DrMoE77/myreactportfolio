@@ -1,16 +1,30 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-function ContactForm() {
+
+function Contact() {
   const [state, handleSubmit] = useForm("meqnngvj");
   if (state.succeeded) {
-      return <p>Thanks for getting in touch!</p>;
+      return <p>Thanks for getting touch!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
+    <div className='body-div'>
+
+    <h2 className='heading'>
+        Contact
+    </h2>
+      <form id='contact-form' className='body-div' onSubmit={handleSubmit}>
+
+      <div className='labels'><label >Name</label></div>
+      <div><input
+        id="name"
+        type="name" 
+        name="name"
+      /></div>
+      
+      <div className='labels'><label htmlFor="email">
         Email Address
-      </label>
-      <input
+      </label></div>
+      <div><input
         id="email"
         type="email" 
         name="email"
@@ -19,7 +33,14 @@ function ContactForm() {
         prefix="Email" 
         field="email"
         errors={state.errors}
-      />
+      /></div>
+    
+        <div className='labels'>
+            <label>
+                Your message
+            </label>
+        </div>
+      <div>
       <textarea
         id="message"
         name="message"
@@ -29,16 +50,16 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      </div>
+      
+      <div><button type="submit" disabled={state.submitting}>
         Submit
-      </button>
+      </button></div>  
+      
+      
     </form>
+    </div>
   );
 }
-function App() {
-  return (
-    <ContactForm />
-  );
-}
-export default App;
 
+export default Contact;

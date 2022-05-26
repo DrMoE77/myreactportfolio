@@ -12,7 +12,13 @@ function Resume () {
             </div>
             <div>
             <p>
-                Download My Resume <a href="">Here</a>
+                Download my Resume 
+                <a
+                  download="resume.pdf"
+                  href="/resume.pdf"
+                  id="resume_down">
+                  Here!
+                </a>
             </p>
 
             </div>
