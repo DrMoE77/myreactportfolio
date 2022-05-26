@@ -17,6 +17,7 @@
 
   ## Installation 
   npm install to install all dependencies
+  run npm install @formspree/react
 
   ## License
   [![License used: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
