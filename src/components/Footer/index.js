@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer (){
     return(
-<div className='' id ='footer-div'>
+<div className='body-div' id ='footer-div'>
 <a href='' >
  <img src='' alt='' className='socials'>
  

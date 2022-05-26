@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Navigation (props) {
-  const tabs = ['about', 'portfolio', 'contact', 'resume'];
+  const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
 
   return (
     <ul className="navigation">
@@ -11,7 +11,7 @@ function Navigation (props) {
             href={'#' + tab.toLowerCase()}
             onClick={() => props.handlePageChange(tab)}
             className={
-              props.currentPage === tab ? 'nav-link active' : 'nav-link'
+              props.currentPage === tab ? 'navigation-link active' : 'navigation-link'
             }
           >
             {tab}

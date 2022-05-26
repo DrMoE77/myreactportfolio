@@ -1,35 +1,37 @@
 import React from "react";
 import projects from '../../projects.json'
 
-function ProjectCard (proj){
+function ProjectCard (props){
     return (
+        <div className="body-div">
         <div className="card"> 
           <div className="img-container">
-            <img alt={proj.project_name} src={proj.project_img}/>
+            <img alt={props.project_name} src={props.project_img}/>
           </div>
           <div className="content">
             <ul>
               <li>
-                <p className="project-name">{proj.project_name}</p>
+                <p className="project-name">{props.project_name}</p>
               </li>
               <li>
-              <p className="project-desc">{proj.project_desc}</p>
+              <p className="project-desc">{props.project_desc}</p>
               </li>
               <li>
                 <div className="project-media">
-                <a alt="github link" href={proj.git_link}>Github link</a> 
-                <a alt ="deployed link" href={proj.deployed_link}>Project Demo</a> 
+                <a alt="github link" href={props.git_link}>Github link</a> 
+                <a alt ="deployed link" href={props.deployed_link}>Project Demo</a> 
                 </div>
               </li>
               
             </ul>
           </div>
         </div>
+        </div>
       );
 }
 
-function Wrapper(proj) {
-    return <div className="wrapper">{proj.children}</div>;
+function Wrapper(props) {
+    return <div className="wrapper">{props.children}</div>;
 }
 
 function Project() {  
@@ -49,7 +51,7 @@ function Project() {
           deployedlink={project.deployed_link}
           description={project.project_desc}
           />
-        ))}
+        ))}     
       </Wrapper>
     </>
     

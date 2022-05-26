@@ -14,13 +14,13 @@ function Header() {
         // switch case for returning the right page 
 
         switch(currentPage) {
-          case "about": 
+          case "About": 
           return <About></About>
-          case "contact": 
+          case "Contact": 
           return <Contact></Contact>
-          case "portfolio":
+          case "Portfolio":
           return  <Project></Project>
-          case "resume": 
+          case "Resume": 
           return <Resume></Resume>
           default:
             return <About></About>

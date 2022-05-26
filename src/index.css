@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./media/bg.jpg');
+  color: aliceblue;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#resume-div{
+  text-align: left;
+  margin-left: 100px;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-list li{
+    display: grid;
+    gap: 1.75em;
+    align-items: start;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.navigation {
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.navigation-link{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
+
+.navigation-item{
+  display: inline-block;
+  padding: 20px;
+}
+
+.body-div{
+  margin-top: 50px;
+}
+
+.mb-3{
+  padding: 10px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+
+.labels{
+  text-align: left;
+}
+
+.inputs{
+  margin-left: 100px;
+  text-align: left;
+}
+
+
