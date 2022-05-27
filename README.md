@@ -3,6 +3,9 @@
 
   ## Description
   This is my Portfolio using react to create it.
+  Deployed URL on github pages:
+  
+  https://DrMoE77.github.io/myreactportfolio/
 
   ## Table of Contents
   * [Usage](#usage)
