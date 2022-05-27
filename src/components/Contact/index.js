@@ -7,15 +7,15 @@ function Contact() {
       return <p>Thanks for getting touch!</p>;
   }
   return (
-    <div className='body-div'>
+    <div id='contact-div' className='body-div'>
 
-    <h2 className='heading'>
+    <h2 id='heading-contact' className='heading'>
         Contact
     </h2>
-      <form id='contact-form' className='body-div' onSubmit={handleSubmit}>
+      <form id='contact-form' onSubmit={handleSubmit}>
 
       <div className='labels'><label >Name</label></div>
-      <div><input
+      <div className='inputs'><input
         id="name"
         type="name" 
         name="name"
@@ -24,7 +24,7 @@ function Contact() {
       <div className='labels'><label htmlFor="email">
         Email Address
       </label></div>
-      <div><input
+      <div className='inputs'><input
         id="email"
         type="email" 
         name="email"
@@ -40,7 +40,7 @@ function Contact() {
                 Your message
             </label>
         </div>
-      <div>
+      <div className='inputs'>
       <textarea
         id="message"
         name="message"

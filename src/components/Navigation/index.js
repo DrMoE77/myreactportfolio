@@ -1,11 +1,17 @@
 import React from 'react';
 
+
 function Navigation (props) {
   const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
 
   return (
+  
     <ul className="navigation">
+
+    <li id='brand' className='navigation-item'><a href=''>Mohamed Afifi</a></li>
+     
       {tabs.map(tab => (
+        
         <li className="navigation-item" key={tab}>
           <a
             href={'#' + tab.toLowerCase()}
@@ -19,7 +25,10 @@ function Navigation (props) {
         </li>
       ))}
     </ul>
+  
   );
 }
+
+
 
 export default Navigation;

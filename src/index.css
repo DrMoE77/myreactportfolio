@@ -15,9 +15,24 @@ code {
     monospace;
 }
 
+#git_icon{
+  margin-left: 5%;
+}
+
+#git_icon:hover{
+  color: black;
+}
+
+.icon{
+  margin:1%;
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
 #resume-div{
   text-align: left;
-  margin-left: 100px;
+  margin-left: 10%;
 }
 
 .skills-list {
@@ -38,7 +53,9 @@ code {
 
 .navigation {
   justify-content: flex-end;
-  font-size: 18px;
+  text-align: right;
+  margin-right: 2.2em;
+  font-size: 1.2em;
 }
 
 .navigation-link{
@@ -50,7 +67,7 @@ code {
 
 .navigation-item{
   display: inline-block;
-  padding: 20px;
+  padding: 0.8em;
 }
 
 .body-div{
@@ -66,11 +83,21 @@ code {
 
 .labels{
   text-align: left;
+ 
 }
 
 .inputs{
-  margin-left: 100px;
   text-align: left;
+}
+
+#heading-contact{
+  text-align: left;
+}
+
+#contact-div {
+  text-align: left;
+  margin-left: 10%;
+
 }
 
 #profile_pic{
@@ -88,6 +115,7 @@ code {
 
 #about-div-text{
   text-align: center;
+  
 }
 
 #footer {
@@ -99,7 +127,7 @@ code {
 .project-name {
   background-color: white;
   font-weight: bold;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.1em;
 
 }
 
@@ -180,29 +208,29 @@ code {
 }
 
 .labels{
-  text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
 #contact-form #name {
-  width: 30%;
+  width: 35%;
   height: 24px;
 }
 
+
 #contact-form #email {
-  width: 30%;
+  width: 35%;
   height: 24px;
 }
 
 #contact-form #message {
-  width: 30%;
+  width: 35%;
   height: 100px;
 }
 
 #contact-form button {
   margin-top: 20px;
-  width: 7%;
+  width: 100px;
   height: 30px;
   color: white;
   background-color: brown;
@@ -218,4 +246,56 @@ code {
 #footer-div a img{
   width: 3%;
   margin: 1em;
+}
+
+#brand{
+  float: left;
+  font-size: 1.2em;
+}
+
+#brand a{
+  color: white;
+  text-decoration: none;
+}
+
+.labels{
+  text-align: left;
+}
+
+.inputs{
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .navigation {
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  #brand{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .navigation {
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0.3em;
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+  #brand{
+    display: none;
+  }
+
 }

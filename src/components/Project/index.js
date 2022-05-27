@@ -1,5 +1,6 @@
 import React from "react";
 import projects from '../../projects.json'
+import {FaGithub} from "react-icons/fa"
 
 function ProjectCard (props){
     return (
@@ -10,15 +11,16 @@ function ProjectCard (props){
           <div className="content">
             <ul>
               <li>
-                <p className="project-name">{props.project_name}</p>
+                <p className="project-name">{props.project_name} 
+                <a id="git_icon" alt="github link" target='_blank' href={props.git_link}><FaGithub/></a> </p>
               </li>
               <li>
               <p className="project-desc">{props.project_desc}</p>
               </li>
               <li>
                 <div className="project-media">
-                <a alt="github link" target='_blank' href={props.git_link}>Github link</a> 
-                <a alt ="deployed link" target='_blank' href={props.deployed_link}>Project Demo</a> 
+                
+                <a alt ="deployed link" target='_blank' href={props.deployed_link}>View Demo</a> 
                 </div>
               </li>
               
@@ -36,7 +38,7 @@ function Project() {
     return (
     <>
     <div className="body-div">
-    <h2 className="title">My projects</h2>
+    <h2 className="title">My Projects</h2>
     </div>
 
       <Wrapper>

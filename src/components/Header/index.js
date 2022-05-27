@@ -6,32 +6,34 @@ import Contact from '../Contact';
 import Resume from '../Resume';
 
 function Header() {
-    // state of current page 
-    const [currentPage, handlePageChange] = useState('About');
+  // state of current page 
+  const [currentPage, handlePageChange] = useState('About');
 
-    const renderPage = () => {
+  const renderPage = () => {
 
-        // switch case for returning the right page 
+    // switch case for returning the right page 
 
-        switch(currentPage) {
-          case "About": 
-          return <About></About>
-          case "Contact": 
-          return <Contact></Contact>
-          case "Portfolio":
-          return  <Project></Project>
-          case "Resume": 
-          return <Resume></Resume>
-          default:
-            return <About></About>
-        }
-       
-    };
+    switch (currentPage) {
+      case "About":
+        return <About></About>
+      case "Contact":
+        return <Contact></Contact>
+      case "Portfolio":
+        return <Project></Project>
+      case "Resume":
+        return <Resume></Resume>
+      default:
+        return <About></About>
+    }
 
-return (
+  };
+
+  return (
+
     <div>
+      
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-    <div>
+      <div>
         {
           renderPage()
         }
