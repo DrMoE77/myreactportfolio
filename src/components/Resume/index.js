@@ -5,16 +5,15 @@ function Resume () {
     return (
         <div className="body-div" id="resume-div">
             <div>
-                <h2>
-                    Resume
-                </h2>
-            </div>
+            <h2>
+                Resume
+            </h2>
 
+            </div>
             <div>
             <p>
-                Download my resume <a id="resume_down" href="resume.pdf" download>here!</a>
+                Download My Resume <a href="">Here</a>
             </p>
-            
 
             </div>
             <div className="skills">
