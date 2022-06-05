@@ -1,4 +1,5 @@
 import React from "react";
+import Pdf from './resume.pdf';
 
 function Resume () {
 
@@ -12,7 +13,7 @@ function Resume () {
             </div>
             <div>
             <p>
-                Download My Resume <a href="">Here</a>
+                Download My Resume <a href={Pdf}>Here</a>
             </p>
 
             </div>
