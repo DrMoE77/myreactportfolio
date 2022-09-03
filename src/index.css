@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./media/bg.jpg');
-  color: aliceblue;
+  color: rgb(255, 240, 244);
   background-size: cover;
 }
 
