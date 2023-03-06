@@ -156,6 +156,11 @@ code {
   width: 350px;
   text-align: left;
 }
+#here_button {
+  color: wheat;
+
+}
+
 
 .card > .img-container {
   height: 50%;

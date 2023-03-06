@@ -4,6 +4,7 @@ import About from '../About';
 import Project from '../Project';
 import Contact from '../Contact';
 import Resume from '../Resume';
+import Bookings from '../Bookings'; 
 
 function Header() {
   // state of current page 
@@ -22,6 +23,8 @@ function Header() {
         return <Project></Project>
       case "Resume":
         return <Resume></Resume>
+        case "Bookings":
+          return <Bookings></Bookings>
       default:
         return <About></About>
     }

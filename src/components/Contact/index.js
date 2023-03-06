@@ -11,6 +11,10 @@ function Contact() {
 
     <h2 id='heading-contact' className='heading'>
         Contact
+        <h3>
+        Ph: 02 7229 5880
+        </h3>
+        
     </h2>
       <form id='contact-form' onSubmit={handleSubmit}>
 

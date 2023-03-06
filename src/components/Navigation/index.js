@@ -1,8 +1,9 @@
 import React from 'react';
+import Bookings from '../Bookings';
 
 
 function Navigation (props) {
-  const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
+  const tabs = ['About', 'Portfolio', 'Contact', 'Resume', 'Bookings'];
 
   return (
   
